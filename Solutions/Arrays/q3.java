@@ -1,19 +1,22 @@
-// Find minimum and maximum in an Array
+// Array Sorting to fetch the Kth element
+
 public class q3 {
     public static void main(String[] args) {
-        int arr[] = {1,3,6,4,8,6,0,1,95,89,46};
-        int min = arr[0];
-        int max = arr[0];
-        int l = arr.length;
-        for(int i = 1;i<l;i++){
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-            if (arr[i] > max) {
-                max = arr[i];
+        int[] arr = { 9, 2, 47, 3, 54, 69, 65, 4, 6, 2, 9 };
+        int l = arr.length, temp;
+        for (int i = 0; i < l; i++) {
+            for (int j = 0; j < l - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
             }
         }
-        System.out.println("the minimum is " + min);
-        System.out.println("the maximum is " + max);
+        for (int i = 0; i < l; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        int k = 5;
+        System.out.println("element at " + k + "th position is : " + arr[k - 1]);
     }
 }
