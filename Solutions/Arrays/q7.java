@@ -2,7 +2,7 @@
 public class q7 {
     public static void main(String[] args) {
         int[] a = { 3, 9, 5, 8, 4, 9, 2 };
-        int l = a.length, temp;
+        int l = a.length;
         int e = 0;
         int[] res = new int[l];
         res[l - 1] = a[0];
