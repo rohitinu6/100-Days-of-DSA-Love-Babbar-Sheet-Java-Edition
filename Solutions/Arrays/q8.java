@@ -9,6 +9,5 @@ public class q8 {
             res = Math.max(maxSum, res);
         }
         System.out.println(res);
-        //System.out.println(res)
     }
 }
