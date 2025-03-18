@@ -5,7 +5,7 @@ public class q10 {
         while()
         for (int i = 0; i < a.length; i++) {
             c = i + c;
-
+            
         }
     }
 }
