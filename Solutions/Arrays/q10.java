@@ -7,9 +7,5 @@ public class q10 {
             c = i + c;
             
         }
-        for (int i = 0; i < a.length; i++) {
-            c = i + c;
-            
-        }
     }
 }
